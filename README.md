@@ -179,7 +179,8 @@ Assistant: Sure, the answer to the question is: <answer>
 
 ## Running the Pipeline
 
-After following the manual download instructions above and placing the ZIP files into `data/awards/`, run the following command to kick off the process:
+Recall: Downloading [these](https://www.nsf.gov/awardsearch/download-awards/) ZIP files is by far the easiest and quickest way to get the full award dataset.
+After downloading them and placing the files into `data/awards/`, run the following command to kick off the process:
 
 ```bash
 # Install dependencies
@@ -188,7 +189,10 @@ pip3 install -r requirements.txt
 # Run the full pipeline from 1960-2025
 python3 main.py 1960 2025 --skip-download
 ```
-You can selectively skip other stages, as well:
+
+That's it! You will find your taxonomy files and the adjacent outputs in `outputs/`.
+
+You can selectively skip other stages, as well if you're looking to finetune something:
 
 ```bash
 # Reuse previously downloaded & extracted data, just re-parse and re-aggregate
