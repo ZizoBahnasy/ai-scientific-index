@@ -46,25 +46,6 @@ Here is a subset of sample empirical questions we would be able to answer with t
 
 
 ## Methodology
-
-This project creates the foundational taxonomy for the Scientific Index by processing the entirety of the NSF's historical awards data.
-
-The result is a coherent **Scientific Research Taxonomy** backed by **real funding flows**, ready to be used as the backbone of a Clio-based Scientific Index.
-
-1.  **Data Ingestion**: The pipeline downloads and processes annual award data archives directly from the NSF, covering a multi-decade span. **NOTE:** The NSF recently changed its programmatic data access protocol, and it is no longer possible to scrape all the award years at once. The next best path is to download ZIP files for each year from [this](https://www.nsf.gov/awardsearch/download-awards/) page and place them into /data/awards. Downloading these ZIP files is by far the easiest and quickest way to get the full award dataset.
-2.  **Parsing & Structuring**: Each individual award is parsed from its raw format. Key information (including the funding amount, year, and its classification within the NSF's organizational hierarchy) is extracted.
-3.  **Hierarchical Aggregation**: The individual awards are aggregated into a comprehensive, three-level hierarchy: *Directorate → Division → Program*. Funding amounts and award counts are summed at each level, both in aggregate and for each year.
-4.  **Taxonomy Generation**: The final, structured hierarchy is exported into two formats for analysis:
-    *   `outputs/taxonomy.json`: A nested JSON object representing the full hierarchy of scientific domains.
-    *   `outputs/taxonomy.tsv`: A flat, three-column file ideal for use in iterative classification tasks. **This is the primary input dataset for Clio.**
-5. **Other Outputs**: We also output the following files:
-   * award-level CSV (`outputs/awards.csv`): a single file containing all the data.
-   * nested research hierarchy (`outputs/research.json`): granular funding and award amounts per program per year.
-   * a compact “brief” hierarchy (`outputs/research_brief.json`): funding and award amounts aggregated at the program level across all years.
-
-
-### NSF as a Scientific Map
-
 While the NSF awards database is, at its heart, a list of several hundred thousand grants issued over six decades, it's also a hierarchical encoding of scientific inquiry as American institutions would classify them.
 
 * **Directorate** → e.g., a broad area of science.
@@ -84,7 +65,19 @@ That means we can treat this data as:
 * a **taxonomy** (directorate → division → program), and
 * a **time series of investment** into each node of that taxonomy, via yearly award amounts.
 
-This repository turns that raw NSF data into a machine-readable hierarchy that can be fed as digestible classification options into Clio in order to replicate the sort of analytical foundation we're looking for.
+This repository turns that raw NSF data into a machine-readable hierarchy that can be fed as digestible classification options into Clio in order to replicate the sort of analytical foundation we're looking for with the following steps:
+
+1.  **Data Ingestion**: The pipeline downloads and processes annual award data archives directly from the NSF, covering a multi-decade span. **NOTE:** The NSF recently changed its programmatic data access protocol, and it is no longer possible to scrape all the award years at once. The next best path is to download ZIP files for each year from [this](https://www.nsf.gov/awardsearch/download-awards/) page and place them into /data/awards. Downloading these ZIP files is by far the easiest and quickest way to get the full award dataset.
+2.  **Parsing & Structuring**: Each individual award is parsed from its raw format. Key information (including the funding amount, year, and its classification within the NSF's organizational hierarchy) is extracted.
+3.  **Hierarchical Aggregation**: The individual awards are aggregated into a comprehensive, three-level hierarchy: *Directorate → Division → Program*. Funding amounts and award counts are summed at each level, both in aggregate and for each year.
+4.  **Taxonomy Generation**: The final, structured hierarchy is exported into two formats for analysis:
+    *   `outputs/taxonomy.json`: A nested JSON object representing the full hierarchy of scientific domains.
+    *   `outputs/taxonomy.tsv`: A flat, three-column file ideal for use in iterative classification tasks. **This is the primary input dataset for Clio.**
+5. **Other Outputs**: We also output the following files:
+   * award-level CSV (`outputs/awards.csv`): a single file containing all the data.
+   * nested research hierarchy (`outputs/research.json`): granular funding and award amounts per program per year.
+   * a compact “brief” hierarchy (`outputs/research_brief.json`): funding and award amounts aggregated at the program level across all years.
+
 
 Here is a sample of the taxonomy:
 
@@ -372,19 +365,4 @@ or implicitly through `main.py` (unless `--skip-visualize` is set).
 
 ### 7. Mission statements
 
-`src/mission_scraper.py` uses `division_urls.txt` to fetch mission statements from NSF pages and merges them into `division_map.json`:
-
-```json
-{
-  "Division Long Name": {
-    "abbr": "ABC",
-    "mission": "The division supports..."
-  },
-  ...
-}
-```
-
-These mission texts can be used to:
-
-* provide richer tooltips in visualizations,
-* augment classifier prompts with **concise, human-written descriptions** of each division.
+`src/mission_scraper.py` uses `division_urls.txt` to fetch mission statements from NSF pages and merges them into `division_map.json`.
