@@ -1,0 +1,5 @@
+.env
+data/
+outputs/
+src/download_test.py
+README copy.md
