@@ -190,7 +190,7 @@ pip3 install -r requirements.txt
 python3 main.py 1960 2025 --skip-download
 ```
 
-That's it! You will find your taxonomy files and the adjacent outputs in `outputs/`.
+That's it! You'll find your taxonomy files and the adjacent outputs in `outputs/`.
 
 You can selectively skip other stages, as well if you're looking to finetune something:
 
