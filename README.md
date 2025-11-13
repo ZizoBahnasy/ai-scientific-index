@@ -1,4 +1,4 @@
-# Scientific Index for AI Research
+# AI Scientific Index
 
 This repository builds the backbone for an **AI Scientific Index**: a [Clio](https://www.anthropic.com/research/clio$0)-based taxonomy and dataset that allows us to study empirically how people use AI for scientific research, in the same spirit as Anthropic’s work on:
 
