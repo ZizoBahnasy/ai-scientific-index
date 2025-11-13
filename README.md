@@ -65,7 +65,7 @@ That means we can treat this data as:
 * a **taxonomy** (directorate → division → program), and
 * a **time series of investment** into each node of that taxonomy, via yearly award amounts.
 
-This repository turns that raw NSF data into a machine-readable hierarchy that can be fed as digestible classification options into Clio in order to replicate the sort of analytical foundation we're looking for with the following steps:
+We turn this raw NSF data into a machine-readable hierarchy that can be fed as digestible classification options into Clio in order to replicate the sort of analytical foundation we're looking for with the following steps:
 
 1.  **Data Ingestion**: The pipeline downloads and processes annual award data archives directly from the NSF, covering a multi-decade span. **NOTE:** The NSF recently changed its programmatic data access protocol, and it is no longer possible to scrape all the award years at once. The next best path is to download ZIP files for each year from [this](https://www.nsf.gov/awardsearch/download-awards/) page and place them into /data/awards. Downloading these ZIP files is by far the easiest and quickest way to get the full award dataset.
 2.  **Parsing & Structuring**: Each individual award is parsed from its raw format. Key information (including the funding amount, year, and its classification within the NSF's organizational hierarchy) is extracted.
