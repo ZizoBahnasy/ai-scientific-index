@@ -25,8 +25,6 @@ This repository handles the taxonomy curation portion of the analysis, including
 
 The Clio methodology, which classifies Claude conversations into this taxonomy and computes metrics like AI usage per program, sits on top of this foundation.
 
----
-
 ## Motivations & Societal Impact: Why Science and Why Now?
 
 In his seminal 1945 report *Science, The Endless Frontier*, Vannevar Bush argues that basic research -- the pure, curiosity-driven exploration of the unknown -- is the "pacemaker of technological progress." He posits that while industry is well-suited to commercialize existing knowledge, it cannot be expected to fund the foundational, high-risk research whose practical benefits may require decades to materialize. This funding, he claims, is a fundamental responsibility of a central institution that could allocate value to the vast expanses of human inquiry. The NSF is the direct result of this vision: an institution designed to fill the reservoir of human knowledge from which all downstream innovations are drawn, and consequently, it has given us an extremely rich, 66-year dataset of the wide range of exploratory scientific domains researchers target in their work.
@@ -215,8 +213,6 @@ Key flags:
 * `--skip-export`
 * `--year-sort YEAR` to write `research_YEAR.json` sorted by that year’s funding.
 
----
-
 ## Repository Layout
 
 ```text
@@ -256,8 +252,6 @@ Key flags:
 ├── README.md                   # README.md
 └── requirements.txt            # Python dependencies
 ```
-
----
 
 ## Appendix
 
