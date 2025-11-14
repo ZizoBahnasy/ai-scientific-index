@@ -33,14 +33,14 @@ AI, in many ways, resembles Bush's hypothesized *memex* -- a device that could c
 
 The NSF awards database is consequently more than just a list of grants; when paired with real AI usage, it is the most structured and comprehensive record of this "endless frontier." It is the perfect taxonomy to serve as the bedrock for analyzing the impact of AI on science.
 
-The leading AI labs center much their optimism toward AI advancement around the rise of autonomous and constant scientific research. Hundreds of billions of dollars in capital are being invested on the basis of this thesis. The promise is a future of "automated science," where the rate of discovery is no longer limited by the speed or constraints of human thought. And yet we have no formal idea of how AI is being applied to scientific research writ large. The AI Scientific Index is designed to measure whether what that might look like.
+The leading AI labs center much their optimism toward AI advancement around the rise of autonomous and highly augmented scientific research, and rightfully so -- the promise of exponentially frequent scientific discoveries has countless downstream implications on human welfare. Hundreds of billions of dollars in capital are being invested on the basis of this thesis of "automated science," where the horizons of knowledge are no longer limited by the speed or constraints of human thought. And yet we have no formal idea of how AI is being applied to scientific research writ large. The AI Scientific Index is designed to measure whether what that might look like.
 
 Here is a subset of sample empirical questions we would be able to answer with this approach:
 
-1.  **Track the Wave of Adoption**: Which scientific fields are being impacted first and most profoundly by AI? Is AI accelerating progress evenly, or are there specific domains, like materials science or genomics, that are pulling ahead?
-2.  **Understand the Nature of Collaboration**: Are scientists primarily using AI as a sophisticated calculator for data analysis, or as a creative partner for generating novel ideas? The `Research Mode` and `Research Action` facets provide a direct lens into this.
-3.  **Inform Science Policy and Funding**: How does scientific inquiry map to funding? The results can provide invaluable feedback to funding bodies like the NSF. By seeing where AI is having the greatest impact, they can strategically invest in programs and education to amplify these benefits, or they can choose to invest in weakly present domains.
-4.  **Model Behavior**: Does AI's training data cause it to favor certain research paths over others? Are there fields where AI-generated information is less reliable? This framework provides an early warning system to detect and mitigate such risks.
+1. Which scientific fields are being impacted first and most profoundly by AI? Is AI accelerating progress evenly, or are there specific domains, like materials science or genomics, that are pulling ahead?
+2. Are scientists primarily using AI as a sophisticated calculator for data analysis, or as a creative partner for generating novel ideas? The `Research Mode` and `Research Action` facets provide a direct lens into this.
+3. How does scientific inquiry map to funding? The results can provide invaluable feedback to funding bodies like the NSF. By seeing where AI is having the greatest impact, they can strategically invest in programs and education to amplify these benefits, or they can choose to invest in weakly present domains.
+4. Does AI's training data cause it to favor certain research paths over others? Are there fields where AI-generated information is less reliable? This framework provides an early warning system to detect and mitigate such risks.
 
 
 ## Methodology
