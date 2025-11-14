@@ -2,4 +2,5 @@
 data/
 outputs/awards.csv
 src/download_test.py
-README copy.md
+deprecated/
+.DS_Store
