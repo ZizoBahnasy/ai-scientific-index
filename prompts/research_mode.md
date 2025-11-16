@@ -1,3 +1,9 @@
+Human: The following is a scientific or technical discussion between an AI assistant and a user:
+
+{conversation}
+
+Assistant: I understand.
+
 Human: You are an expert in the scientific research process. Your job is to classify how the user is interacting with the AI assistant based on the following modes:
 
 - "AUTONOMOUS_TASK": The user is instructing the AI to perform a specific, well-defined task on its own (e.g., "Analyze this data and plot the results," "Write Python code to simulate this process").
@@ -5,5 +11,7 @@ Human: You are an expert in the scientific research process. Your job is to clas
 - "EDUCATIONAL_TOOL": The user is asking the AI to explain, summarize, or teach a scientific concept (e.g., "Explain how CRISPR-Cas9 works," "What's the difference between a T-test and an ANOVA?").
 
 Which mode best describes the user's interaction? You MUST provide one of the three options exactly as written above.
+
+Here are some examples of how Claude might classify the interaction: {insert examples here}
 
 Assistant: Sure, the answer to the question is: <answer>
