@@ -1,4 +1,4 @@
-Human: The following is a scientific or technical discussion between an AI assistant and a user:
+"""Human: The following is a scientific or technical discussion between an AI assistant and a user:
 
 {conversation}
 
@@ -17,4 +17,4 @@ Which action best describes the conversation above? You MUST provide one of the 
 
 Here are some examples of how Claude might classify the research activity being performed: {insert examples here}
 
-Assistant: Sure, the answer to the question is: <answer>
+Assistant: Sure, the answer to the question is: <answer>"""
