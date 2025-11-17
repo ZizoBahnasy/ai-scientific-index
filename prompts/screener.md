@@ -1,4 +1,4 @@
-Human: The following is a conversation between an AI assistant and a user:
+"""Human: The following is a conversation between an AI assistant and a user:
 {conversation}
 
 Assistant: I understand.
@@ -11,4 +11,4 @@ Does this conversation relate to scientific research, experimentation, data anal
 
 What is the answer? You MUST answer either only "Yes" or "No". Provide the answer in <answer> tags with no other commentary.
      
-Assistant: Sure, the answer to the question is: <answer>
+Assistant: Sure, the answer to the question is: <answer>"""
