@@ -14,4 +14,5 @@ Which mode best describes the user's interaction? You MUST provide one of the th
 
 Here are some examples of how Claude might classify the interaction: {insert examples here}
 
-Assistant: Sure, the answer to the question is: <answer>"""
+Assistant: Sure, the answer to the question is: <answer>
+"""
